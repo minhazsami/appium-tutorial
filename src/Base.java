@@ -10,7 +10,9 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
 	
-	public static void main(String[] args) throws MalformedURLException {
+	public static AndroidDriver<AndroidElement> capabilities() throws MalformedURLException
+	
+	{
 		
 		File appDir = new File ("src");
 		
@@ -27,6 +29,8 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
+		
+		return driver;
 		
 	}
 
