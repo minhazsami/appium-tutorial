@@ -15,7 +15,7 @@ public class AndroidUiautomator extends Base {
 		// AndriodUIAutomator syntax ("attribute("\value\")")
 		
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
-		
+		driver.findElementByAndroidUIAutomator("text(\"Animation\")").click();
 		
 	}
 
